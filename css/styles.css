@@ -22,7 +22,7 @@ body {
   font-size: 14px;
 }
 
-.link-header {
+.nav__logo-link {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -35,13 +35,13 @@ body {
   padding-bottom: 25px;
 }
 
-.span-header,
+.nav__span-header,
 .span-footer {
   color: var(--link-color);
   font-size: 26px;
 }
 
-.link-main-list,
+.nav__list,
 .hero-list,
 .list-footer,
 .section-list,
@@ -56,9 +56,9 @@ body {
   list-style-type: none;
 }
 
-.link-main,
-.link-submain,
-.link-subsubmain {
+.nav__link,
+.nav__sublink,
+.nav__link-contacts {
   text-decoration: none;
   font-weight: 500;
   line-height: 1.14;
@@ -67,20 +67,20 @@ body {
   padding: 32px 0px 32px 0px;
 }
 
-.link-main,
-.link-submain,
-.link-subsubmain {
+.nav__link,
+.nav__sublink,
+.nav__link-contacts {
   color: var(--main-color);
 }
 
-.sublink,
-.link {
+.group__sublink,
+.group__link {
   color: var(--secondary-color);
   padding: 32px 0px 32px 0px;
 }
 
-.link,
-.sublink {
+.group__link,
+.group__sublink {
   display: flex;
   align-items: center;
 
@@ -90,7 +90,7 @@ body {
   text-decoration: none;
 }
 
-.hero-btn {
+.section-hero__btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -198,7 +198,7 @@ body {
   color: var(--secondary-color);
 }
 
-.hero-main-title {
+.section-hero__title {
   align-items: center;
   margin: auto;
   margin-bottom: 30px;
@@ -212,16 +212,16 @@ body {
   color: var(--white-color);
 }
 
-.link-main:focus,
-.link-main:hover,
-.link-submain:focus,
-.link-submain:hover,
-.link-subsubmain:hover,
-.link-subsubmain:focus,
-.link:hover,
-.link:focus,
-.sublink:hover,
-.sublink:focus,
+.nav__link:focus,
+.nav__link:hover,
+.nav__sublink:focus,
+.nav__sublink:hover,
+.nav__link-contacts:hover,
+.nav__link-contacts:focus,
+.group__link:hover,
+.group__link:focus,
+.group__sublink:hover,
+.group__sublink:focus,
 .link-map:hover,
 .link-map:focus,
 .link-tel:focus,
@@ -282,7 +282,7 @@ ul {
   display: flex;
 }
 
-.link-main-list,
+.nav__list,
 .nav {
   display: flex;
   align-items: center;
@@ -294,9 +294,9 @@ ul {
   margin-left: auto;
 }
 
-.link-main,
-.link-submain,
-.link {
+.nav__link,
+.nav__sublink,
+.group__link {
   margin-right: 50px;
 }
 
@@ -529,8 +529,8 @@ ul {
   cursor: pointer;
 }
 
-.mail,
-.tel {
+.group__icon,
+.group__subicon {
   margin-right: 10px;
 
   width: 16px;
@@ -540,7 +540,7 @@ ul {
   fill: var(--subborder-color);
 }
 
-.tel {
+.group__subicon {
   margin-right: 10px;
 
   width: 10px;
@@ -550,10 +550,10 @@ ul {
   fill: var(--subborder-color);
 }
 
-.link:hover .mail,
-.link:focus .mail,
-.sublink:hover .tel,
-.sublink:focus .tel {
+.group__link:hover .group__icon,
+.group__link:focus .group__icon,
+.group__sublink:hover .group__subicon,
+.group__sublink:focus .group__subicon {
   fill: currentColor;
 }
 
@@ -719,13 +719,13 @@ ul {
   height: 18px;
 }
 
-.link-main,
-.link-submain,
-.link-subsubmain,
-.link,
-.sublink,
-.mail,
-.tel,
+.nav__link,
+.nav__sublink,
+.nav__link-contacts,
+.group__link,
+.group__sublink,
+.group__icon,
+.group__subicon,
 .mini-logo,
 .link-map,
 .link-mail,
@@ -762,11 +762,13 @@ textarea,
 
 .section-logo__text {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-align: center;
   text-transform: uppercase;
   color: var(--white-color);
   cursor: default;
+  user-select: none;
 }
 
 .note-book-text {
