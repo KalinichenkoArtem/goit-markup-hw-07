@@ -1022,6 +1022,11 @@ textarea {
 
 /* ---------- Footer ---------- */
 
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer {
   padding: 60px 0 60px 0;
 
@@ -1036,11 +1041,6 @@ textarea {
   font-size: 26px;
 
   color: var(--link-color);
-}
-
-.container-footer {
-  display: flex;
-  align-items: baseline;
 }
 
 .footer-contacts__mainlink {
