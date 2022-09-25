@@ -21,6 +21,12 @@
 
 /* ---------- Reset ---------- */
 
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
 h1,
 h2,
 h3,
@@ -33,12 +39,6 @@ ul {
 /* ---------- Reset ---------- */
 
 /* ---------- General ---------- */
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
 
 .section {
   text-align: center;
