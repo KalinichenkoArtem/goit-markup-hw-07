@@ -21,12 +21,6 @@
 
 /* ---------- Reset ---------- */
 
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
 h1,
 h2,
 h3,
@@ -38,34 +32,14 @@ ul {
 
 /* ---------- Reset ---------- */
 
-/* ---------- Group ---------- */
+/* ---------- General ---------- */
 
-.nav__link,
-.nav__sublink,
-.nav__link-contacts,
-.group__link,
-.group__sublink,
-.group__icon,
-.group__subicon,
-.team-socialweb__logo,
-.footer-contacts__link,
-.team-socialweb__link,
-.section-clients__logo,
-.buttons__hero-btn,
-.buttons__btn,
-.section-cards__link,
-.modal__button-close,
-input,
-textarea,
-.modal-checkbox__icon-check,
-.modal-checkbox__icon-uncheck {
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
 }
 
-/* ---------- Group ---------- */
-
-/* ---------- General ---------- */
 .section {
   text-align: center;
   padding-top: 94px;
@@ -129,6 +103,9 @@ body {
 .nav__sublink,
 .group__link {
   margin-right: 50px;
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__link:focus,
@@ -181,6 +158,8 @@ body {
 
   color: var(--main-color);
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current::after {
@@ -213,6 +192,9 @@ body {
 
   text-decoration: none;
   color: var(--secondary-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .group__icon,
@@ -224,6 +206,9 @@ body {
 
   cursor: pointer;
   fill: var(--subborder-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .group__subicon {
@@ -484,6 +469,8 @@ body {
   height: 100%;
 
   border-color: transparent;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socialweb__item:hover,
@@ -533,6 +520,8 @@ body {
   height: 20px;
 
   fill: var(--subborder-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-socialweb__logo:hover {
@@ -602,6 +591,8 @@ body {
 
   cursor: pointer;
   fill: var(--subborder-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------- Clients ---------- */
@@ -642,6 +633,8 @@ body {
   cursor: pointer;
   border-radius: 4px;
   background-color: var(--subbackground-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons__btn {
@@ -659,6 +652,9 @@ body {
   cursor: pointer;
   border-radius: 4px;
   background-color: var(--subbackground-color);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------- Portfolio buttons ---------- */
@@ -690,6 +686,8 @@ body {
   display: block;
 
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-cards__link:hover,
@@ -819,6 +817,8 @@ body {
 
   cursor: pointer;
   background-color: var(--white-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__button-close:hover {
@@ -969,6 +969,8 @@ textarea:focus {
 
 input {
   padding-left: 16px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 label {
@@ -1006,6 +1008,14 @@ textarea {
   font-family: Roboto;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-checkbox__icon-check,
+.modal-checkbox__icon-uncheck {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---------- Modal ---------- */
@@ -1049,6 +1059,8 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-contacts__link:focus,
