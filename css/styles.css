@@ -1,6 +1,6 @@
 /* ---------- Variables ---------- */
 
-:root {
+/* :root {
   --main-color: #212121;
   --secondary-color: #757575;
   --link-color: #2196f3;
@@ -15,30 +15,45 @@
   --backgroundtext-color: #30313bcc;
   --navlink-color: #ffffff99;
   --input-border-color: #ffffff4d;
-}
+} */
 
 /* ---------- Variables ---------- */
 
 /* ---------- Reset ---------- */
 
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-h1,
+/* h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 ul {
   margin: 0;
   padding: 0;
 }
 
+img {
+  display: block;
+} */
+
 /* ---------- Reset ---------- */
 
 /* ---------- General ---------- */
+
+/* *,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Roboto;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+
+  color: var(--main-color);
+}
 
 .section {
   text-align: center;
@@ -52,14 +67,6 @@ ul {
   color: var(--main-color);
 }
 
-body {
-  font-family: Roboto;
-  letter-spacing: 0.03em;
-  font-size: 14px;
-
-  color: var(--main-color);
-}
-
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -67,12 +74,12 @@ body {
   margin-right: auto;
 
   width: 1200px;
-}
+} */
 
 /* ---------- General ---------- */
 
 /* ---------- Header ---------- */
-
+/* 
 .container-nav {
   display: flex;
 }
@@ -226,12 +233,12 @@ body {
 .group__sublink:hover .group__subicon,
 .group__sublink:focus .group__subicon {
   fill: currentColor;
-}
+} */
 
 /* ---------- Header ---------- */
 
 /* ---------- Hero ---------- */
-
+/* 
 .section-hero {
   padding: 200px 0px;
   margin-left: auto;
@@ -278,12 +285,12 @@ body {
   background-color: var(--link-color);
   color: var(--white-color);
   cursor: pointer;
-}
+} */
 
 /* ---------- Hero ---------- */
 
 /* ---------- Benefits ---------- */
-
+/* 
 .section-benefits {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -329,13 +336,13 @@ body {
   line-height: 1.71;
 
   color: var(--secondary-color);
-}
+} */
 
 /* ---------- Benefits ---------- */
 
 /* ---------- What are we doing ---------- */
 
-.section-logo {
+/* .section-logo {
   padding-top: 0;
 }
 
@@ -394,13 +401,13 @@ body {
   color: var(--white-color);
   cursor: default;
   user-select: none;
-}
+} */
 
 /* ---------- What are we doing ---------- */
 
 /* ---------- Team ---------- */
 
-.section-team__list {
+/* .section-team__list {
   display: flex;
 
   gap: 30px;
@@ -454,12 +461,12 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
+} */
 
 /* ---------- Team ---------- */
 
 /* ---------- Socialwebs ---------- */
-
+/* 
 .team-socialweb__link {
   display: flex;
   align-items: center;
@@ -527,12 +534,12 @@ body {
 .team-socialweb__logo:hover {
   fill: var(--white-color);
   background-color: var(--link-color);
-}
+} */
 
 /* ---------- Socialwebs ---------- */
 
 /* ---------- Clients ---------- */
-
+/* 
 .section-clients__title {
   margin-bottom: 50px;
   text-align: center;
@@ -593,13 +600,13 @@ body {
   fill: var(--subborder-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* ---------- Clients ---------- */
 
 /* ---------- Portfolio buttons ---------- */
 
-.buttons__list {
+/* .buttons__list {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -655,12 +662,12 @@ body {
 
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* ---------- Portfolio buttons ---------- */
 
 /* ---------- Portfolio cards ---------- */
-
+/* 
 .section-cards {
   display: flex;
   margin: 0;
@@ -758,13 +765,13 @@ body {
   line-height: 1.87;
 
   color: var(--secondary-color);
-}
+} */
 
 /* ---------- Portfolio cards ---------- */
 
 /* ---------- Modal ---------- */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   left: 0;
   top: 0;
@@ -1016,12 +1023,12 @@ textarea {
 .modal-checkbox__icon-uncheck {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* ---------- Modal ---------- */
 
 /* ---------- Footer ---------- */
-
+/* 
 .container-footer {
   display: flex;
   align-items: baseline;
@@ -1196,6 +1203,6 @@ textarea {
   gap: 10px;
 
   list-style-type: none;
-}
+} */
 
 /* ---------- Footer ---------- */
