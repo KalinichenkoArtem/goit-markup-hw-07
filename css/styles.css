@@ -23,7 +23,7 @@ body {
 }
 
 .nav__logo-link {
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -129,7 +129,7 @@ body {
 
 .footer-contacts__mainlink {
   text-decoration: none;
-  font-family: "Raleway";
+  font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -138,7 +138,7 @@ body {
 
 .footer-contacts__link {
   text-decoration: none;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -319,10 +319,7 @@ ul {
   text-align: center;
 
   background: var(--background-color);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-img.jpg);
   background-size: cover;
 }
@@ -747,7 +744,7 @@ textarea,
 }
 
 .current::after {
-  content: "";
+  content: '';
 
   position: absolute;
   display: block;
