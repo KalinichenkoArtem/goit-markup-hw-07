@@ -36,12 +36,13 @@
     border-radius: 4px;
 
     &__button-close {
-        position: fixed;
+        position: absolute;
         display: flex;
         align-items: center;
         justify-content: center;
+        top: 8px;
+        right: 8px;;
         padding: 0;
-        margin: 3px 12px 543px 490px;
 
         width: 30px;
         height: 30px;
@@ -53,8 +54,9 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover {
+        &:hover, &:focus {
             fill: var(--link-color);
+            outline: transparent;
         }
     }
     &__btn {
@@ -98,20 +100,18 @@ label {
     color: var(--secondary-color);
 }
 
-label.modal-checkbox__label {
-    margin-bottom: 0;
-}
-
 label.modal-form__label {
     margin-bottom: 10px;
 }
 
 label.modal-checkbox__label {
     display: block;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 
     user-select: none;
+
+    margin-bottom: 0;
 }
 
 input {
@@ -187,6 +187,7 @@ textarea {
     &__link-terms {
         font-size: 14px;
         line-height: 1.71;
+        letter-spacing: 0.03em;
 
         text-decoration-line: underline;
         color: var(--link-color);
@@ -199,10 +200,17 @@ textarea {
 
     &__span {
         margin-left: 8.38px;
+        font-size: 14px;
+        line-height:1.71;
+        letter-spacing: 0.03em;
     }
 
     &__icon-check,
     &__icon-uncheck {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -233,7 +241,11 @@ textarea {
 }
 
 .modal-form__label:hover .modal-form__icon,
-.modal-form__label:focus-visible .modal-form__icon {
+.modal-form__input:focus .modal-form__icon {
+    fill: var(--link-color);
+}
+
+input:focus .modal-form__icon {
     fill: var(--link-color);
 }
 
@@ -248,3 +260,4 @@ textarea {
 .modal-checkbox__input:checked+.modal-checkbox__icons-check .modal-checkbox__icon-uncheck {
     opacity: 0;
 }
+
