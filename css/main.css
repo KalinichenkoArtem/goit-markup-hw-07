@@ -1098,17 +1098,8 @@ img {
 }
 .modal__btn {
   margin-top: 30px;
+  padding: 0;
   font-family: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 200px;
   height: 50px;
   font-weight: 700;
@@ -1165,14 +1156,12 @@ label.modal-checkbox__label {
 input {
   margin-top: 4px;
   padding-left: 16px;
-  width: 410px;
+  width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-property: inherit;
-  transition-property: inherit;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1192,8 +1181,7 @@ textarea {
   padding-top: 12px;
   padding-left: 16px;
   margin-top: 4px;
-  margin-bottom: 20px;
-  width: 428px;
+  width: 466px;
   height: 120px;
   resize: none;
   font-family: Roboto;
@@ -1209,6 +1197,10 @@ textarea:hover, textarea:focus {
   outline: transparent;
 }
 
+.modal-form__label-textarea {
+  margin-bottom: 20px;
+}
+
 .modal-checkbox {
   display: block;
   text-align: center;
@@ -1220,7 +1212,6 @@ textarea:hover, textarea:focus {
           justify-content: center;
 }
 .modal-checkbox__input {
-  display: none;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1260,6 +1251,20 @@ textarea:hover, textarea:focus {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 .modal-form__title {
   text-align: center;
   margin-bottom: 12px;
@@ -1275,6 +1280,8 @@ textarea:hover, textarea:focus {
 
 .modal-form__icon {
   position: absolute;
+  -webkit-transition-property: fill;
+  transition-property: fill;
   top: 50%;
   left: 3%;
   width: 18px;
@@ -1284,7 +1291,7 @@ textarea:hover, textarea:focus {
 }
 
 .modal-form__label:hover .modal-form__icon,
-.modal-form__input:focus .modal-form__icon {
+.modal-form__label:focus .modal-form__icon {
   fill: var(--link-color);
 }
 
@@ -1471,6 +1478,7 @@ input:focus .modal-form__icon {
   border-radius: 4px;
 }
 .footer-btn__input {
+  margin-top: 0;
   width: 358px;
   height: 50px;
   font-size: 16px;
